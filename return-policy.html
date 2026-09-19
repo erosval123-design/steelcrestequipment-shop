@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23060e08'/%3E%3Cpolygon points='16,26 24,7 32,26' fill='none' stroke='%23666' stroke-width='3'/%3E%3Crect x='20' y='23' width='14' height='3' rx='1' fill='%23666'/%3E%3Cpolygon points='8,26 16,5 24,26' fill='none' stroke='%231b2d6b' stroke-width='3.5'/%3E%3Crect x='4' y='23' width='20' height='3' rx='1' fill='%231b2d6b'/%3E%3C/svg%3E">
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Return Policy | SteelCrest Equipment</title>
 <meta name="description" content="Heavy Duty. Half the Price. — SteelCrest Equipment">
@@ -359,15 +360,35 @@ footer{background:var(--s1);border-top:1px solid var(--bd);padding:64px 40px 28p
 .ft-copy{color:rgba(255,255,255,.26);font-size:.75rem}
 .ppills{display:flex;gap:5px}
 .ppill{background:var(--s2);border:1px solid var(--bd);padding:3px 9px;border-radius:4px;font-size:.65rem;color:rgba(255,255,255,.35);font-weight:600;font-family:var(--ff-body)}
+
+/* full logo SVG */
+.logo-svg{display:block;height:44px;width:auto}
+.logo-mark,.logo-name{display:none!important}
+@media(max-width:480px){.logo-svg{height:36px}}
+
 </style>
 </head>
 <body>
 <div class="hdr-wrap">
   <div class="hdr">
-    <a href="index.html" class="logo">
-      <div class="logo-mark"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><!-- shield outline --><path d="M12 2L4 6.5V12c0 4.5 3.5 7.5 8 9 4.5-1.5 8-4.5 8-9V6.5L12 2z" fill="rgba(255,255,255,.15)" stroke="white" stroke-width="1.8" stroke-linejoin="round"/><!-- mountain peaks inside --><polyline points="6.5,16.5 9.5,10 12,13.5 14.5,10.5 17.5,16.5" fill="none" stroke="white" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></div>
-      <span class="logo-name">SteelCrest <em>Equipment</em></span>
-    </a>
+    <a href="index.html" class="logo"><svg viewBox="0 0 390 56" height="46" xmlns="http://www.w3.org/2000/svg">
+  <!-- Grey mountain behind (secondary) -->
+  <polygon points="28,48 48,12 68,48" fill="none" stroke="#7a7a7a" stroke-width="5" stroke-linejoin="bevel"/>
+  <rect x="36" y="44" width="24" height="6" rx="2" fill="#7a7a7a"/>
+  <!-- Base bar grey -->
+  <rect x="22" y="48" width="52" height="4" rx="2" fill="#6a6a6a"/>
+  <!-- Navy mountain in front -->
+  <polygon points="12,48 34,8 56,48" fill="none" stroke="#1b2d6b" stroke-width="6" stroke-linejoin="bevel"/>
+  <rect x="20" y="44" width="28" height="6" rx="2" fill="#1b2d6b"/>
+  <!-- Base bar navy -->
+  <rect x="6" y="48" width="52" height="5" rx="2" fill="#1b2d6b"/>
+  <!-- Wordmark: STEELCREST (white for dark bg) -->
+  <text x="80" y="38" font-family="'Barlow Condensed',Impact,'Arial Black',sans-serif"
+        font-size="36" font-weight="900" fill="#ffffff" letter-spacing="-0.5">STEELCREST</text>
+  <!-- Sub -->
+  <text x="81" y="54" font-family="'Barlow Condensed',sans-serif"
+        font-size="11.5" font-weight="600" fill="rgba(255,255,255,.42)" letter-spacing="4.5">EQUIPMENT</text>
+</svg></a>
     <button class="hmbtn" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
